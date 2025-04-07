@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Qintra E-commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #dadada;
+        }
+
+        .sidebar {
+            width: 130px;
+            background-color: #047b89;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .sidebar .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a.active,
+        .sidebar a:hover {
+            background-color: #2dc7a7;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #8a80f8, #5f64f4);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .user-avatar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .table caption {
+            font-size: 24px;
+            font-weight: bold;
+            color: #047b89;
+            padding: 10px;
+        }
+
+        .table th {
+            background-color: #99c2c7;
+            color: #033f42;
+        }
+
+        .table td {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #c2e1e6;
+        }
+
+        .table tbody tr:hover {
+            background-color: #88c0c7;
+            color: white;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: linear-gradient(90deg, #8a80f8, #5f64f4);
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo mb-4">
+                <img src="logo.png" alt="Qintra Logo">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="explorer.html">Explore</a>
+                <a href="cart.html" class="active">Cart</a>
+                <a href="saved.html">Saved</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow-1 p-3">
+            <div class="header mb-4">
+                <h1 class="h4 m-0">The largest e-commerce</h1>
+                <div class="user-avatar">
+                    <img src="profile.jpg" alt="User Avatar">
+                </div>
+            </div>
+
+            <!-- Cart Table -->
+            <div class="container">
+                <table class="table table-bordered">
+                    <caption class="text-center">🛒 Cart</caption>
+                    <thead>
+                        <tr>
+                            <th>Sl no.</th>
+                            <th>Bike Model</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Royel Enfield Classic 350</td>
+                            <td>4,40,000</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Royel Enfield Hunter 350</td>
+                            <td>3,40,000</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Royel Enfield Bullet 350</td>
+                            <td>4,30,000</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Royel Enfield Meteor 350</td>
+                            <td>5,00,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer mt-4">
+                <p class="mb-0">All Rights Reserved <br> Copyright@Rafikunnabi</p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
